@@ -7,12 +7,6 @@ cd "$(dirname "$0")"
 CONFIG="${1:-release}"
 APP="dist/LGforMac.app"
 
-# Generate the app icon once (committed afterwards, regenerated only if missing).
-if [[ ! -f Support/AppIcon.icns ]]; then
-    echo "Generating app icon…"
-    swift scripts/make_icon.swift Support/AppIcon.icns
-fi
-
 swift build -c "$CONFIG"
 
 rm -rf "$APP"
