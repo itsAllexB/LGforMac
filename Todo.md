@@ -50,7 +50,7 @@ the system volume/brightness pop-up. Known gaps and leads:
 
 ## Distribution & polish
 
-- [ ] **App icon** — replace the generated sun tile with a real designed icon.
+- [x] **App icon** — replace the generated sun tile with a real designed icon.
 - [ ] **Code signing / notarization** — a real Developer ID would also end the
       local-network permission churn that ad-hoc signing causes (see README).
 - [ ] Auto-update (Sparkle) and a release pipeline (zip + GitHub releases like LGforWin).
